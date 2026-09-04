@@ -1,0 +1,62 @@
+generated: '2026-09-04'
+method: probed
+source: >-
+  Anonymous HTTP probes of every host this record knows — the registrable domain
+  wandercraft.eu and its www/en Webflow hosts, plus the legacy wandercraft.com S3
+  holding page. No API baseURL or OpenAPI servers[] host exists for this company,
+  so there is no third host to probe.
+note: >-
+  Every path 404s. The Webflow origin answers /.well-known/* with an 88-byte
+  "Invalid .well-known request" HTML stub and every other unknown path with the
+  13.5KB site 404 page, so nothing here is a served document. No WellKnown or
+  SecurityTxt pointer is emitted: this file records an absence, not a presence.
+  wandercraft.eu apex and wandercraft.com refuse TLS from the probe origin (status 0).
+hosts:
+- host: en.wandercraft.eu
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: www.wandercraft.eu
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: wandercraft.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+  - path: /.well-known/openid-configuration
+    status: 0
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+  - path: /.well-known/api-catalog
+    status: 0
+  - path: /.well-known/ai-plugin.json
+    status: 0
+  - path: /.well-known/agent-card.json
+    status: 0
+  - path: /.well-known/agent.json
+    status: 0

@@ -1,0 +1,35 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  Searched npm (registry.npmjs.org search "wandercraft" — 0 results), PyPI
+  (/pypi/wandercraft/json — 404), RubyGems (404), crates.io (0 crates) and the
+  GitHub organization github.com/Wandercraft, which the company links from its own
+  site. Wandercraft publishes no developer portal or SDK page to derive from.
+package_count: 0
+official_sdk_count: 0
+note: >-
+  Wandercraft distributes no client library on any public package registry, and has
+  no API for one to wrap. Its entire public code surface is a single GitHub
+  repository — a maintenance FORK of a third-party C library (l29ah/libmpsse) for
+  SPI/I2C control over FTDI chips, i.e. internal hardware-bench tooling, not a
+  first-party SDK. No SDKs pointer is emitted for this record.
+packages: []
+source_repositories:
+- name: libmpsse
+  url: https://github.com/Wandercraft/libmpsse
+  registry: none
+  official: false
+  fork: true
+  fork_of: https://github.com/l29ah/libmpsse
+  language: C
+  version: null
+  published: null
+  version_note: >-
+    Not distributed through any package registry, so there is no metadata endpoint
+    to read a version or release date from; the repository carries GitHub releases
+    but no registry artifact. Last push 2022-03-10, dormant for over four years.
+  description: >-
+    (a maintenance fork of the) Open source library for SPI/I2C control via FTDI chips.
+  note: >-
+    Classified official:false because it is a fork of someone else's library, kept
+    for Wandercraft's own use rather than published as a Wandercraft product.
